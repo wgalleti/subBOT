@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 const http = axios.create({
-  baseURL: "https://suporte2.hifuzion.com.br",
+  baseURL: process.env.BOT_API_URL,
 });
 
 const login = async () => {
